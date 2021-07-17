@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Iván Proaño" description="Coding Dojo Practice">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/85c271c130.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container p-3 mx-auto">
+        <ul class="nav justify-content-end navbar-light bg-light">
+            <span class="navbar-text"><strong>Usuario:</strong> {{logged_user.first_name}} {{logged_user.last_name}} </span>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-current="page" href="/"><i class="fas fa-home"></i>Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container p-3 row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class=" jumbotron ">
+                <h1 class="display-6">Bienvenido: {{logged_user.first_name}}</h1>
+                <br>
+                <p class="text-success">Usuario registrado y/o loggeado correctamente! </p>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+
+    </div>
+
+</body>
+
+
+
+
+</html>
